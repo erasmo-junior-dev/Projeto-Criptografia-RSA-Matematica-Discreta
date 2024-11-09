@@ -11,7 +11,7 @@ int eh_primo(mpz_t a) {
     mpf_sqrt(raiz, a_float); // calcula a raiz quadrada
     mpf_clear(a_float);
 
-    if (mpz_cmp_ui(a, 1) <= 0) {
+    if (mpz_cmp_ui(a, 1) <= 0) { //mpz_cmp é um metodo para comparar, nesse caso, avalia se a é menor que 1
         mpf_clear(raiz);
         return 0;
     }
@@ -38,14 +38,14 @@ int eh_primo(mpz_t a) {
 // função para calcular o MDC - basicamente, algoritmo de Euclides com gmp
 void mdc(mpz_t resultado, const mpz_t a, const mpz_t b) {
     mpz_init(resultado);
-    if (mpz_cmp_ui(b, 0) == 0) {
-        mpz_set(resultado, a);
+    if (mpz_cmp_ui(b, 0) == 0) { // verifica se b é zero.
+        mpz_set(resultado, a); // se sim, então a é o resultado do mdc.
         return;
     }
 
     mpz_t novo_b;
     mpz_init(novo_b);
-    mpz_mod(novo_b, a, b);
+    mpz_mod(novo_b, a, b); // novo_b = a % b;
     mdc(resultado, b, novo_b);
     mpz_clear(novo_b);
 }
@@ -90,15 +90,13 @@ void inverso_modular(mpz_t d, const mpz_t e, const mpz_t phi) {
         mpz_set(x1, t);
     }
 
-    // x1 deve ser positivo
-    if (mpz_cmp_ui(x1, 0) < 0) {
+    if (mpz_cmp_ui(x1, 0) < 0) { // compara se x1 é positivo
         mpz_add(x1, x1, phi); // modifica x1 para garantir que seja positivo, senão ele gera uma chave negativa
     }
 
     // passando o resultado para d
     mpz_set(d, x1);
 
-    // liberação da memória pela 8398032903209 vez pro The Huxley não cair
     mpz_clear(m0);
     mpz_clear(t);
     mpz_clear(q);
@@ -107,11 +105,11 @@ void inverso_modular(mpz_t d, const mpz_t e, const mpz_t phi) {
     mpz_clear(a);
 }
 
-// FUNÇÕES DE CRIPTOGRAFIA
+// FUNÇÃO DE CRIPTOGRAFIA E DESCRIPTOGRAFIA
 void mod_exp(mpz_t result, const mpz_t base, const mpz_t exp, const mpz_t mod) {
     mpz_set_ui(result, 1); // result = 1
 
-    mpz_t base_mod, exp_copy; // criando copia do expoente para alterar nossas variaveis, pois tudo nessa lib é um maldito ponteiro.
+    mpz_t base_mod, exp_copy; // criando copia do expoente para alterar nossas variaveis, pois a lib trata variaveis como ponteiros.
     mpz_init(base_mod);
     mpz_init(exp_copy);
     mpz_set(base_mod, base);
