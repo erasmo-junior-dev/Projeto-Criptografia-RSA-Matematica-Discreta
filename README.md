@@ -51,7 +51,6 @@ Em caso de dúvidas, você pode seguir este manual de instruções: [Manual de I
 
 Gostaríamos de agradecer especialmente aos colaboradores que contribuíram para o desenvolvimento do design visual do ícone do nosso projeto!
 
-- 🎨 **Ingrid Laryssa Freitas Silva (FAUD/UFAL)** – Contribuiu com o design do ícone da aplicação, trazendo uma identidade visual moderna e intuitiva.
 - 🎨 **José Avelino Freire Júnior (FDA/UFAL)** – Contribuiu com o design do ícone da aplicação, trazendo uma identidade visual moderna e intuitiva.
 
 Essas contribuições foram fundamentais para tornar nosso projeto mais familiar ao usuário final!
