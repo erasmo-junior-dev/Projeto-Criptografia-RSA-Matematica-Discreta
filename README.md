@@ -1,4 +1,10 @@
-# Projeto de Criptografia RSA
+<p align = "center">
+<img src="https://ufal.br/ufal/resolveuid/458d5fb68aa7459bb9ec4ac2ce59c6b4/@@images/image/mini" alt="Logo da UFAL" width="150">
+</p>
+
+<h1 align = "center">
+<b>Projeto de Criptografia RSA</b>
+</h1>
 
 Este repositório contém o programa de criptografia baseado no algoritmo de RSA desenvolvido pelos autores para a disciplina de matemática discreta, ministrada pelo professor Bruno Pimentel no Instituto de Computação da UFAL (IC/UFAL).
 
@@ -28,6 +34,8 @@ Este repositório contém o programa de criptografia baseado no algoritmo de RSA
    ```
 3. Execute o arquivo executável ```cripto_rsa.exe```.
 
+Em caso de dúvidas, você pode seguir este manual de instruções: [Manual de Instruções](https://docs.google.com/document/d/1v1mLUwItjrb9E2OQbRLOgDU-GP0jsxHTi8m_-9Un1uA/)
+
 ## Autores:
 | Nome                                   | Número de Matrícula | E-mail                  | Curso               |
 |----------------------------------------|---------------------|-------------------------|---------------------|
@@ -38,6 +46,15 @@ Este repositório contém o programa de criptografia baseado no algoritmo de RSA
 | Daniel de Araujo Albuquerque           | 202407311           | daa@ic.ufal.br         | Ciência da Computação |
 | Victor André Lopes Brasileiro          | 202407269           | valb1@ic.ufal.br       | Ciência da Computação |
 | Pablo Levy Fernandes Alcântara         | 202407429           | plfa1@ic.ufal.br       | Ciência da Computação |
+
+## Contribuições Especiais
+
+Gostaríamos de agradecer especialmente aos colaboradores que contribuíram para o desenvolvimento do design visual do ícone do nosso projeto!
+
+- 🎨 **Ingrid Laryssa Freitas Silva (FAUD/UFAL)** – Contribuiu com o design do ícone da aplicação, trazendo uma identidade visual moderna e intuitiva.
+- 🎨 **José Avelino Freire Júnior (FDA/UFAL)** – Contribuiu com o design do ícone da aplicação, trazendo uma identidade visual moderna e intuitiva.
+
+Essas contribuições foram fundamentais para tornar nosso projeto mais familiar ao usuário final!
 
 ## Licença
 
